@@ -1,7 +1,7 @@
 # ste-assesment-performance-testing
 
-**Performance test for GET /api/Employees
-**
+**Performance test for GET /api/Employees**
+
 Objective: Verify the GET /api/Employees responsiveness and reliability under light, steady traffic.
 
 **Workload Profile (k6):**
