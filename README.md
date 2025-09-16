@@ -59,6 +59,6 @@ http_req_duration: p(95)<800 → PASS
 http_req_duration: max<2000 → FAIL (observed max 2.41s)
 ```
 
-** Overall Result: **
+**Overall Result:**
 
 ❌ FAILED due to a single outlier above the max-latency threshold, despite excellent p90/p95 and zero errors.
