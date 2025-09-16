@@ -29,7 +29,7 @@ Sleep 1s to maintain gentle pacing.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-**Test Run Results: **
+**Test Run Results:**
 
 <img width="1109" height="1000" alt="image" src="https://github.com/user-attachments/assets/ace34248-961d-4a91-8ead-29ab0bf6c6fc" />
 
