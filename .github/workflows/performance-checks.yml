@@ -24,11 +24,3 @@ jobs:
             -e K6_SUMMARY_EXPORT \
             grafana/k6:latest \
             run employees_performance.test.js
-
-      - name: Upload k6 summary
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: k6-summary
-          path: k6-summary.json
-          retention-days: 14
