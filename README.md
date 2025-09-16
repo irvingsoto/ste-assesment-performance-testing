@@ -33,28 +33,32 @@ Sleep 1s to maintain gentle pacing.
 
 <img width="1109" height="1000" alt="image" src="https://github.com/user-attachments/assets/ace34248-961d-4a91-8ead-29ab0bf6c6fc" />
 
+```
 Duration: ~60s hold (total ~61s including graceful periods)
 Max VUs: 10
 Total requests: 236
 Error rate: 0.00% (all requests succeeded)
-
+```
 **Latency distribution:**
+```
 avg 287.84 ms
 p(90) 346.53 ms ✅ (meets <500 ms)
 p(95) 365.67 ms ✅ (meets <800 ms)
 max 2.41 s ❌ (breaches <2000 ms)
-
+```
 **Checks:**
+```
 “status is 200”: 100% ✅
 “duration < 500ms”: 234/236 (≈99%) — 2 iterations exceeded 500 ms
-
+```
 **Threshold Verdicts:**
+```
 http_req_failed: rate<0.01 → PASS (0.00%)
 http_req_duration: p(90)<500 → PASS
 http_req_duration: p(95)<800 → PASS
 http_req_duration: max<2000 → FAIL (observed max 2.41s)
+```
 
-**
-Overall Result: **
+** Overall Result: **
 
 ❌ FAILED due to a single outlier above the max-latency threshold, despite excellent p90/p95 and zero errors.
